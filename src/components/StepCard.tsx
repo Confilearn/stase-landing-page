@@ -7,15 +7,21 @@ interface StepCardProps {
 
 const StepCard = ({ step, title, description, icon }: StepCardProps) => {
   return (
-    <div className="relative flex flex-col items-center gap-4 rounded-2xl border border-border bg-card p-6 text-center shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-secondary-foreground font-display font-bold text-sm">
+    <div className="group relative flex flex-col items-center gap-5 rounded-2xl glass-card p-7 text-center transition-all duration-300 hover:-translate-y-1">
+      {/* Step badge */}
+      <div className="absolute -top-3 left-6 flex h-6 w-6 items-center justify-center rounded-full bg-secondary text-secondary-foreground font-display text-xs font-bold shadow-sm">
         {step}
       </div>
-      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-accent text-secondary">
+
+      {/* Icon */}
+      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-accent-foreground transition-transform duration-300 group-hover:scale-110">
         {icon}
       </div>
-      <h3 className="font-display text-lg font-semibold text-foreground">{title}</h3>
-      <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
+
+      <div className="space-y-2">
+        <h3 className="font-display text-base font-semibold text-foreground">{title}</h3>
+        <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
+      </div>
     </div>
   );
 };
