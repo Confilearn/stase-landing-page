@@ -1,5 +1,6 @@
 import { Smartphone, Download, Globe, Settings, Shield, Apple, TabletSmartphone } from "lucide-react";
 import PlatformSection from "@/components/PlatformSection";
+import DownloadSection from "@/components/DownloadSection";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const iosSteps = [
@@ -79,6 +80,8 @@ const Index = () => {
 
       {/* Content */}
       <main className="relative mx-auto max-w-4xl space-y-24 px-6 pb-28">
+        <DownloadSection />
+
         <PlatformSection
           platform="iPhone (iOS)"
           icon={<Apple className="h-5 w-5" />}
