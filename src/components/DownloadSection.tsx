@@ -11,7 +11,7 @@ const DownloadSection = () => {
           <Download className="h-5 w-5" />
         </div>
         <h2 className="font-display text-2xl font-bold text-foreground tracking-tight">
-          Quick Access
+          Android Download
         </h2>
       </div>
 
@@ -30,7 +30,7 @@ const DownloadSection = () => {
               />
             </div>
             <p className="text-xs text-muted-foreground font-medium tracking-wide">
-              Scan to install
+              Scan to install on Android
             </p>
           </div>
 
@@ -62,7 +62,7 @@ const DownloadSection = () => {
               Download Build
             </a>
             <p className="text-xs text-muted-foreground font-medium tracking-wide">
-              Open link on your device
+              Open link on your Android device
             </p>
           </div>
         </div>

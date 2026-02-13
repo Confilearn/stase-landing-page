@@ -3,23 +3,6 @@ import PlatformSection from "@/components/PlatformSection";
 import DownloadSection from "@/components/DownloadSection";
 import ThemeToggle from "@/components/ThemeToggle";
 
-const iosSteps = [
-  {
-    title: "Open the Link",
-    description: "Tap the install link sent to you via email or message. It will open in Safari.",
-    icon: <Globe className="h-6 w-6" />,
-  },
-  {
-    title: "Install Profile",
-    description: "When prompted, tap 'Install' to add the development provisioning profile to your device.",
-    icon: <Shield className="h-6 w-6" />,
-  },
-  {
-    title: "Trust the Developer",
-    description: "Go to Settings → General → VPN & Device Management and trust the developer certificate.",
-    icon: <Settings className="h-6 w-6" />,
-  },
-];
 
 const androidSteps = [
   {
@@ -82,11 +65,24 @@ const Index = () => {
       <main className="relative mx-auto max-w-4xl space-y-24 px-6 pb-28">
         <DownloadSection />
 
-        <PlatformSection
-          platform="iPhone (iOS)"
-          icon={<Apple className="h-5 w-5" />}
-          steps={iosSteps}
-        />
+        {/* iPhone Unavailable Notice */}
+        <section className="w-full">
+          <div className="mb-10 flex items-center justify-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-secondary text-secondary-foreground shadow-sm">
+              <Apple className="h-5 w-5" />
+            </div>
+            <h2 className="font-display text-2xl font-bold text-foreground tracking-tight">iPhone (iOS)</h2>
+          </div>
+          <div className="mx-auto max-w-xl glass-card rounded-2xl p-10 text-center">
+            <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-destructive/10 text-destructive">
+              <Apple className="h-8 w-8" />
+            </div>
+            <h3 className="font-display text-lg font-bold text-foreground mb-2">Currently Unavailable</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-sm mx-auto">
+              The Stase development build is not currently available for iPhone users. We're working on making it accessible — stay tuned for updates.
+            </p>
+          </div>
+        </section>
 
         <div className="flex items-center gap-4">
           <div className="h-px flex-1 bg-border" />
