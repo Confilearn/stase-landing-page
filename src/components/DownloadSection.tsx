@@ -11,7 +11,7 @@ const DownloadSection = () => {
           <Download className="h-5 w-5" />
         </div>
         <h2 className="font-display text-2xl font-bold text-foreground tracking-tight">
-          Android Download
+          Quick Access
         </h2>
       </div>
 
