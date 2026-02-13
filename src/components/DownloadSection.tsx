@@ -15,7 +15,7 @@ const DownloadSection = () => {
         </h2>
       </div>
 
-      <div className="mx-auto max-w-xl glass-card rounded-2xl p-10">
+      <div className="mx-auto max-w-[600px] glass-card rounded-2xl p-10">
         <div className="flex flex-col items-center gap-10 sm:flex-row sm:items-center sm:justify-center">
           {/* QR Code */}
           <div className="flex flex-col items-center gap-4">
