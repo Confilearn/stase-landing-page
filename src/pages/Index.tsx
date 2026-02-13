@@ -26,7 +26,7 @@ const Index = () => {
   return (
     <div className="relative min-h-screen bg-background">
       {/* Background grid */}
-      <div className="fixed inset-0 bg-grid opacity-30 pointer-events-none" />
+      <div className="fixed inset-0 bg-grid opacity-15 pointer-events-none" />
 
       {/* Nav */}
       <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-border/40 bg-background/60 backdrop-blur-2xl px-6 py-4">
