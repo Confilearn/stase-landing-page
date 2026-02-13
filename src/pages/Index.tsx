@@ -1,4 +1,4 @@
-import { Smartphone, Download, Globe, Settings, Shield, Apple, TabletSmartphone } from "lucide-react";
+import { Smartphone, Download, Globe, Shield, Apple, TabletSmartphone } from "lucide-react";
 import PlatformSection from "@/components/PlatformSection";
 import DownloadSection from "@/components/DownloadSection";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -26,43 +26,44 @@ const Index = () => {
   return (
     <div className="relative min-h-screen bg-background">
       {/* Background grid */}
-      <div className="fixed inset-0 bg-grid opacity-40 pointer-events-none" />
+      <div className="fixed inset-0 bg-grid opacity-30 pointer-events-none" />
 
       {/* Nav */}
-      <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-border/50 bg-background/70 backdrop-blur-xl px-6 py-3">
-        <div className="flex items-center gap-2.5">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
+      <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-border/40 bg-background/60 backdrop-blur-2xl px-6 py-4">
+        <div className="flex items-center gap-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
             <Smartphone className="h-4 w-4" />
           </div>
-          <span className="font-display text-lg font-bold tracking-tight text-foreground">stase</span>
+          <span className="font-display text-xl font-bold tracking-tight text-foreground">stase</span>
         </div>
         <ThemeToggle />
       </nav>
 
       {/* Hero */}
-      <header className="relative overflow-hidden pb-20 pt-24 text-center">
+      <header className="relative overflow-hidden pb-24 pt-28 text-center">
         <div className="absolute inset-0 -z-10 bg-hero-gradient" />
-        {/* Decorative glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[800px] -z-10 rounded-full bg-primary/8 blur-3xl" />
+        {/* Decorative orbs */}
+        <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 h-[600px] w-[900px] -z-10 rounded-full bg-primary/6 blur-[100px]" />
+        <div className="absolute top-[100px] right-[-200px] h-[300px] w-[300px] -z-10 rounded-full bg-primary/4 blur-[80px]" />
         
         <div className="relative mx-auto max-w-2xl px-6">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 backdrop-blur-sm px-4 py-1.5 text-xs font-medium text-muted-foreground shadow-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
+          <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-border/60 bg-card/50 backdrop-blur-xl px-5 py-2 text-xs font-semibold text-muted-foreground shadow-sm tracking-wide uppercase">
+            <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
             Development Build
           </div>
 
-          <h1 className="font-display text-5xl font-bold tracking-tight text-foreground sm:text-6xl leading-[1.1]">
+          <h1 className="font-display text-5xl font-extrabold tracking-tight text-foreground sm:text-7xl leading-[1.05]">
             Install{" "}
             <span className="text-gradient">Stase</span>
           </h1>
-          <p className="mx-auto mt-5 max-w-md text-base text-muted-foreground leading-relaxed">
+          <p className="mx-auto mt-6 max-w-lg text-base text-muted-foreground leading-relaxed font-medium">
             Follow the steps below to get the development build running on your iPhone or Android device.
           </p>
         </div>
       </header>
 
       {/* Content */}
-      <main className="relative mx-auto max-w-4xl space-y-24 px-6 pb-28">
+      <main className="relative mx-auto max-w-4xl space-y-28 px-6 pb-32">
         <DownloadSection />
 
         {/* iPhone Unavailable Notice */}
@@ -85,9 +86,9 @@ const Index = () => {
         </section>
 
         <div className="flex items-center gap-4">
-          <div className="h-px flex-1 bg-border" />
-          <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">or</span>
-          <div className="h-px flex-1 bg-border" />
+          <div className="h-px flex-1 bg-border/60" />
+          <span className="text-[10px] font-bold text-muted-foreground tracking-[0.2em] uppercase">or</span>
+          <div className="h-px flex-1 bg-border/60" />
         </div>
 
         <PlatformSection
@@ -98,8 +99,8 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="relative border-t border-border/50 bg-card/30 backdrop-blur-sm py-8 text-center">
-        <p className="text-xs text-muted-foreground tracking-wide">
+      <footer className="relative border-t border-border/40 bg-card/20 backdrop-blur-xl py-10 text-center">
+        <p className="text-xs text-muted-foreground tracking-widest font-semibold uppercase">
           Stase · Development Build · {new Date().getFullYear()}
         </p>
       </footer>
