@@ -7,9 +7,9 @@ interface StepCardProps {
 
 const StepCard = ({ step, title, description, icon }: StepCardProps) => {
   return (
-    <div className="group relative flex flex-col items-center gap-5 rounded-2xl glass-card p-7 text-center transition-all duration-300 hover:-translate-y-1">
+    <div className="group relative flex flex-col items-center gap-5 rounded-2xl glass-card p-8 text-center transition-all duration-300 hover:-translate-y-1">
       {/* Step badge */}
-      <div className="absolute -top-3 left-6 flex h-6 w-6 items-center justify-center rounded-full bg-secondary text-secondary-foreground font-display text-xs font-bold shadow-sm">
+      <div className="absolute -top-3 left-6 flex h-7 w-7 items-center justify-center rounded-lg bg-primary text-primary-foreground font-display text-xs font-bold shadow-sm">
         {step}
       </div>
 
@@ -19,7 +19,7 @@ const StepCard = ({ step, title, description, icon }: StepCardProps) => {
       </div>
 
       <div className="space-y-2">
-        <h3 className="font-display text-base font-semibold text-foreground">{title}</h3>
+        <h3 className="font-display text-base font-bold text-foreground">{title}</h3>
         <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
       </div>
     </div>
