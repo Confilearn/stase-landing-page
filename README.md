@@ -62,7 +62,7 @@ npm run lint
 1. Clone the repository
 2. Install dependencies with `npm install`
 3. Start the development server with `npm run dev`
-4. Open your browser to `http://localhost:8081`
+4. Open your browser to `http://localhost:8080`
 
 ## 📁 Project Structure
 

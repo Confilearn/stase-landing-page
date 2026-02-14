@@ -81,7 +81,7 @@ const Index = () => {
         {/* iPhone Unavailable Notice */}
         <section className="w-full">
           <div className="mb-10 flex items-center justify-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-secondary text-secondary-foreground shadow-sm">
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-secondary text-white shadow-sm">
               <FaApple className="h-5 w-5" />
             </div>
             <h2 className="font-display text-2xl font-bold text-foreground tracking-tight">
