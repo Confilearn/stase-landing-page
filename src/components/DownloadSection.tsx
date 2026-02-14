@@ -1,7 +1,7 @@
 import { QRCodeSVG } from "qrcode.react";
 import { Download, Smartphone } from "lucide-react";
 
-const BUILD_URL = "https://expo.dev/your-build-link";
+const BUILD_URL = "https://expo.dev/artifacts/eas/fnRmFQwfFZiPFbFTVKag3B.apk";
 
 const DownloadSection = () => {
   return (
